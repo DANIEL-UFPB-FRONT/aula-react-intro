@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 
 //#0 Default code by CRA
-import App from './App.js'
+import App from './App.jsx'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -48,7 +48,7 @@ root.render(
 //   </div>
 // ); 
 
-// // Fragment
+// Fragment
 // const myElement = (
 //     <><h1> I am a section  </h1><p> I am a paragraph  </p></>
 // ); 
@@ -69,7 +69,7 @@ root.render(
 // import Goal from './Goal';
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
-//     <Goal isGoal={false}/>
+//     <Goal isGoal={true}/>
 // );
 
 //#8 ternary operator
@@ -87,15 +87,34 @@ root.render(
 //     <Garage cars={cars}/>
 // );
 
-// #10 creating components
+// #10 conditional &&
+// import ListCars from './ListCars.jsx';
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// const cars = ['Ford', 'BMW', 'Audi']
+// root.render(
+//     <ListCars cars={cars}/>
+// );
+
+// #11 creating components
 // import CarSet from './CarSet';
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
 //     <CarSet />
 // );
 
+// #12 creating components via children
+// import CarSetChildren from './CarSetChildren';
+// import Car from './components/Car.jsx';
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(
+//     <CarSetChildren>
+//       <Car color='red' brand='Audi'/>
+//       <Car color='green' brand='BMW'/>
+//     </CarSetChildren>
+// );
 
-// #11 Style
+
+// #13 Style
 // import Header from './Header';
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
