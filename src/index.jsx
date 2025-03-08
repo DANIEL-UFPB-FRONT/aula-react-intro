@@ -2,14 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 
-//#0 Default code by CRA
-import App from './App.jsx'
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+//#0 Default code by vite
+// import App from './App.jsx'
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>
+// );
 
 //#1 Sample without jsx
 // const myElement = React.createElement('h1',{},'I do not use JSX!')
@@ -47,10 +47,15 @@ root.render(
 //     <p> I am a paragraph  </p>
 //   </div>
 // ); 
+// const root = ReactDOM.createRoot(document.getElementById('root'))
+// root.render(myElement)
 
 // Fragment
 // const myElement = (
-//     <><h1> I am a section  </h1><p> I am a paragraph  </p></>
+//     <>
+//       <h1> I am a section  </h1>
+//       <p> I am a paragraph  </p>
+//     </>
 // ); 
 // const root = ReactDOM.createRoot(document.getElementById('root'))
 // root.render(myElement)
@@ -69,7 +74,7 @@ root.render(
 // import Goal from './Goal';
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
-//     <Goal isGoal={true}/>
+//     <Goal isGoal={false}/>
 // );
 
 //#8 ternary operator
@@ -87,7 +92,7 @@ root.render(
 //     <Garage cars={cars}/>
 // );
 
-// #10 conditional &&
+// #10 laços
 // import ListCars from './ListCars.jsx';
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 // const cars = ['Ford', 'BMW', 'Audi']
@@ -115,8 +120,8 @@ root.render(
 
 
 // #13 Style
-// import Header from './Header';
-// const root = ReactDOM.createRoot(document.getElementById('root'));
-// root.render(
-//     <Header />
-// );
+import Header from './Header';
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+    <Header />
+);
